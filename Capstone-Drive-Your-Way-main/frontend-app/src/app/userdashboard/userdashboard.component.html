@@ -1,0 +1,31 @@
+<div class="container mt-4 p-5 text-white rounded">
+  <h2>Welcome {{ user }}</h2>
+
+  <br />
+  <button class="btn btn-success" (click)="flago()">Sell your car</button>
+  <br />
+  <br />
+  <br />
+  <br />
+  <div *ngIf="flagos"><app-add-product></app-add-product></div>
+  <span *ngFor="let p of products">
+    <img src="{{ p.url }}" width="600px" height="400px" />
+    <br />
+
+    <span>{{ p.pname }}</span>
+    <br />
+    <span><label>Price=</label>{{ p.price }}</span>
+    <br />
+    <br />
+    
+
+    <input class="btn btn-success btn-sm p-4" type="button" value="                                                                       Buy                                                                       " (click)="deleteProduct(p.pid)" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </span>
+
+  <input class="btn btn-danger btn-sm p-3" type="button" value="                                                             logout                                                             " (click)="logout()" />
+</div>

@@ -1,0 +1,37 @@
+<div class="container mt-3">
+  <div class="mt-4 p-5 text-white rounded" style="background-color:#1a2629">
+    <h2>Login :)</h2>
+    <br/>
+    <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+      <label>Email-Id :</label>&nbsp;&nbsp;
+      <input type="email" formControlName="emailid" /><br />
+      <br/>
+      <label>Password :</label>&nbsp;&nbsp;
+      <input type="password" formControlName="password" /><br />
+      <br/>
+      <br/>
+      <br/>
+      <input
+        type="radio"
+        name="typeOfUser"
+        value="admin"
+        formControlName="typeOfUser"
+      />Admin
+      &nbsp;&nbsp;<input
+        type="radio"
+        name="typeOfUser"
+        value="user"
+        formControlName="typeOfUser"
+      />User<br />
+      <br/>
+      <input class="btn btn-success" type="submit" value="Login" />
+      <br/>
+      <br/>
+      <input class="btn btn-danger" type="reset" value="Reset" />
+    </form>
+    <br />
+    <span style="color: red">{{ msg }}</span
+    ><br />
+    <button class="btn btn-secondary" routerLink="/signUp">Sign Up</button>
+  </div>
+</div>

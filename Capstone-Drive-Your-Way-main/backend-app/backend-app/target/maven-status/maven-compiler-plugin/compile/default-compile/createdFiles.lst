@@ -1,0 +1,9 @@
+com\onlineshop\repository\LoginRepository.class
+com\onlineshop\service\LoginService.class
+com\onlineshop\bean\Product.class
+com\onlineshop\service\ProductService.class
+com\MyAppApplication.class
+com\onlineshop\controller\LoginController.class
+com\onlineshop\bean\Login.class
+com\onlineshop\controller\ProductController.class
+com\onlineshop\repository\ProductRepository.class

@@ -1,0 +1,24 @@
+<div class="container mt-4 p-5 text-white rounded" style="background-color:#1a2629">
+    <h2>Create Account :)</h2>
+    <h6>Kindly register yourself to start buying/selling cars!</h6>
+    <form [formGroup]="loginRef" (ngSubmit)="signUp()">
+        <br/>
+        <label>Email-Id :</label>&nbsp;&nbsp;
+        <input type="email" formControlName="emailid"/><br/>
+        <br/>
+        <label>Password :</label>&nbsp;&nbsp;
+        <input type="password" formControlName="password"/><br/>
+        <br/>
+        
+        <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/>Admin&nbsp;&nbsp;
+        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/>User<br/>
+        <br/>
+        <input class="btn btn-success" type="submit" value="signUp"/>
+        <br/>
+        <br/>
+        <input class="btn btn-danger" type="reset" value="reset"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span><br/>
+    <button class="btn btn-secondary" routerLink="/login">login</button>
+</div>

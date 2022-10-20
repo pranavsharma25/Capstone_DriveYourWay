@@ -1,0 +1,13 @@
+<div class="container mt-4 p-5 text-white rounded">
+    <h2>Welcome {{user}}</h2>
+    <h6>*****This is admin dashboard*****</h6>
+    <button class="btn btn-success" routerLink="addProduct">Add New car</button> |
+    <button class="btn btn-warning" routerLink="findAllProduct">View cars</button>
+    <br/>
+    <hr/>
+        <router-outlet></router-outlet>
+    <hr/>
+  
+    <br/>
+    <input class="btn btn-danger" type="button" value="                              Logout                              " (click)="logout()"/>
+</div>
